@@ -6,3 +6,24 @@ print(my_string.capitalize()) # Converts the first character to upper case
 name = 'Subash'
 print(my_string.casefold()) # converts string into lower case
 print(name.casefold())
+
+# string.center(length, character)
+# length : The length of the required string
+# character: optional, the character to fill the missing space on each side
+# The center() method will center align the string, 
+# using a specified character (space is default) as the fill character.
+
+print(name.center(20, '*'))
+
+# The count() method returns the number of times a specified 
+# value appears in the string.
+# syntax : string.count(value, start, end)
+# value : the string to value to search for
+# start : opt, pos. to start search
+# end : opt, pos. to end search
+
+string2 = 'apple is always apple, it is not mango'
+print(string2.count('a', 5, 16))
+print(string2.count('apple'))
+
+print('\n')
