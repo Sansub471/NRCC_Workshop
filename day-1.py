@@ -26,4 +26,11 @@ string2 = 'apple is always apple, it is not mango'
 print(string2.count('a', 5, 16))
 print(string2.count('apple'))
 
-print('\n')
+with open('data.txt', 'r') as fp:
+    string3 = fp.readlines()
+    string3 = ''.join(string3)
+
+print(f'The word apple in the following paragraph : \n {string3}\n')
+print(string3.count('apple'))
+
+
