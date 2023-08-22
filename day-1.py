@@ -32,5 +32,16 @@ with open('data.txt', 'r') as fp:
 
 print(f'The word apple in the following paragraph : \n {string3}\n')
 print(string3.count('apple'))
+print('\n')
 
-
+# syntax : string.encode(encoding=encoding, errors = errors)
+string4 = 'nepal'
+print(string4.encode(encoding="ascii"))
+txt = "My name is Ståle"
+#txt = 'यो नेपाल हो।'
+print(txt.encode(encoding="ascii", errors="backslashreplace"))
+print(txt.encode(encoding="ascii", errors="ignore"))
+print(txt.encode(encoding="ascii", errors="namereplace"))
+print(txt.encode(encoding="ascii", errors="replace"))
+print(txt.encode(encoding="ascii", errors="xmlcharrefreplace"))
+# https://www.w3schools.com/python/ref_string_encode.asp
