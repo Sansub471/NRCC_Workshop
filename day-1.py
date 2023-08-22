@@ -74,3 +74,9 @@ print('Tabsize 5:', str.expandtabs(5))
 print('Tabsize 6:', str.expandtabs(6))
 
 # https://www.programiz.com/python-programming/methods/string/expandtabs
+print('\n')
+
+# syntax : string.find(value, start, end)
+# value : required value to search for in the string
+print(string3.find('banana')) # -1 means not found
+print(my_string.find('nepal')) # find the first occurence
