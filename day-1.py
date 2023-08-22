@@ -45,3 +45,11 @@ print(txt.encode(encoding="ascii", errors="namereplace"))
 print(txt.encode(encoding="ascii", errors="replace"))
 print(txt.encode(encoding="ascii", errors="xmlcharrefreplace"))
 # https://www.w3schools.com/python/ref_string_encode.asp
+
+# syntax : string.endswith(value, start, end)
+# returns true or false
+filename = 'computer.jpg'
+print(filename.endswith('.jpg'))
+
+ioe = 'https://exam.ioe.edu.np'
+print(ioe.endswith('.np'))
