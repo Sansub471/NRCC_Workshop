@@ -155,5 +155,17 @@ x = txt.istitle()
 print(x)
 print('\n')
 
+# syntax : string.isupper()
+# Returns True if all characters in the string are upper case
 
+# syntax : string.join(iterables)
+# Converts the elements of an iterable into a string
+myDict = {"name": "John", "country": "Norway"}
+mySeparator = "--"
+x = mySeparator.join(myDict) 
+print(x)
+# The keys are joined not values
 
+myTuple = ("John", "Peter", "Vicky")
+x = "#".join(myTuple)
+print(x)
