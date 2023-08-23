@@ -60,17 +60,9 @@ print('Original String:', str)
 
 # tabsize is set to 2
 print('Tabsize 2:', str.expandtabs(2))
-
-# tabsize is set to 3
 print('Tabsize 3:', str.expandtabs(3))
-
-# tabsize is set to 4
 print('Tabsize 4:', str.expandtabs(4))
-
-# tabsize is set to 5
 print('Tabsize 5:', str.expandtabs(5))
-
-# tabsize is set to 6
 print('Tabsize 6:', str.expandtabs(6))
 
 # https://www.programiz.com/python-programming/methods/string/expandtabs
@@ -80,3 +72,26 @@ print('\n')
 # value : required value to search for in the string
 print(string3.find('banana')) # -1 means not found
 print(my_string.find('nepal')) # find the first occurence
+print('\n')
+
+# syntax : string.format(value1, value2...)
+# The format() method formats the specified value(s) and insert them 
+# inside the string's placeholder. The place holder defined by {}
+price = 'For only {price:.2f} dollars!'
+print(price.format(price=50)) 
+
+txt1 = "My name is {fname}, I'm {age}".format(fname = "Subash", age = 24)
+txt2 = "My name is {0}, I'm {1}".format("Subash", 24)
+txt3 = "My name is {}, I'm {}".format("Subash", 24)
+
+print(txt1)
+print(txt2)
+print(txt3)
+
+# Formatting types : https://www.w3schools.com/python/ref_string_format.asp
+
+# syntax: string.index(value, start, end)
+# The index() method finds the first occurrence of the specified value.
+print(my_string.index('my')) 
+# Difference with find is -1 returned by find when not found
+# but it raises a ValueError
