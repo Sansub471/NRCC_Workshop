@@ -109,3 +109,34 @@ print(text.isalnum())
 # syntax : string.isdecimal()
 # The isdecimal() method returns True if all the characters are decimals (0-9).
 
+# syntax : string.isdigit()
+# The isdigit() method returns True if all the characters are digits, otherwise False.
+
+# syntax : string.isidentifier()
+# alphanumeric and _ characters only allowed.
+
+# syntax : string.islower() True if all lowercase
+
+# syntax : string.isnumeric() 0-9 and exponents like 2 and 3/4
+# -1 and 1.5 are not because they have - and . which are non-numeric
+
+a = "\u0030" #unicode for 0
+b = "\u00B2" #unicode for &sup2;
+c = "10km2"
+d = "-1"
+e = "1.5"
+print("check isnumeric()")
+print(a.isnumeric())
+print(b.isnumeric())
+print(c.isnumeric())
+print(d.isnumeric())
+print(e.isnumeric())
+print('\n')
+
+# syntax : string.isprintable()
+# The isprintable() method returns True if all the characters are printable, otherwise False.
+txt = "Hello!\n Are you #1?"
+x = txt.isprintable()
+print(x)
+print('\n')
+
