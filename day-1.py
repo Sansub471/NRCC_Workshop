@@ -95,3 +95,17 @@ print(txt3)
 print(my_string.index('my')) 
 # Difference with find is -1 returned by find when not found
 # but it raises a ValueError
+
+# syntax : string.isalnum() 
+# The isalnum() method returns True if all the characters are alphanumeric, meaning alphabet 
+# letter (a-z) and numbers (0-9)
+
+text = 'STRLspiron45%'
+print(text.isalnum())
+
+# syntax : string.isascii()
+# The isascii() method returns True if all the characters are ascii characters  (a-z)
+
+# syntax : string.isdecimal()
+# The isdecimal() method returns True if all the characters are decimals (0-9).
+
