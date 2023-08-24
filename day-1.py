@@ -169,3 +169,16 @@ print(x)
 myTuple = ("John", "Peter", "Vicky")
 x = "#".join(myTuple)
 print(x)
+print('\n')
+
+# syntax : string.ljust(length, character)
+# The ljust() method will left align the string, using a specified character 
+# (space is default) as the fill character.
+name = 'Nepal'
+print(name.ljust(20, '*'))
+print(name.ljust(30, '$'))
+
+# syntax : string.lower()
+# converts a string to lower case
+desh = 'NEPAL'
+print(desh.lower())
