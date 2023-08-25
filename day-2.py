@@ -53,3 +53,22 @@ print(txt.rjust(20, '*'))
 
 txt = 'nepa is in south asia, nepal is next to india, nepal is my home'
 print(txt.rpartition('nepal'))
+
+# syntax: string.rsplit(separator, maxsplit)
+# The rsplit() method splits a string into a list, starting from the right.
+# separator : opt, default is space
+# maxsplit : opt, how many splits, default is -1 all
+
+txt = 'mango, apple, cherry, banana, pineapple'
+print(txt.rsplit(',')) # -1 all, empty is also all
+
+# syntax : string.rstrip(characters)
+# The rstrip() method removes any trailing characters (characters at the end a string), space is the default trailing character to remove.
+# characters : opt, set of characters to remove as trailing characters
+
+txt = "     nepal is my country   **********    "
+print(txt.rstrip('*'))
+txt = "banana,,,,,ssqqqww....."
+x = txt.rstrip(".wsq,") # look at it carefully
+print(x)
+print('\n')
