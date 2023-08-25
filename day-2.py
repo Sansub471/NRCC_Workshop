@@ -22,3 +22,17 @@ print(x)
 
 print(txt.replace('one', 'ten'))
 print('\n')
+
+# syntax : string.rfind(value, start, end)
+#  finds the last occurrence of the specified value.
+# returns -1 if the value is not found.
+
+txt = "Hello, welcome to my world."
+x = txt.rfind("e", 5, 10) # try changing start and end values
+print(x)
+
+# syntax  : string.rindex(value, start, end)
+#The rindex() method finds the last occurrence of the specified value.
+#The rindex() method raises an exception if the value is not found.
+
+print(txt.rindex("e", 5, 10))
