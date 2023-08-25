@@ -109,3 +109,23 @@ txt = ",,,,,rrttgg.....banana....rrr"
 x = txt.strip(",grt.")
 print(x)
 print('\n')
+
+# syntax : string.swapcase()
+# upper case letters to lower case and vice versa
+txt = 'STRLgtkSpiron177'
+print(txt.swapcase())
+
+# syntax : string.title()
+# returns a string where first character in each word is capitalized
+txt = 'welcome to nepal'
+print(txt.title())
+
+# syntax : string.upper()
+print(txt.upper())
+
+# syntax : string.zfill(len)
+# desired length of the string
+# adds zeros (0) at the beginning of the string, until it reaches the specified length.
+print(txt.zfill(20))
+
+# Note : All string methods returns new values. They do not change the original string.
