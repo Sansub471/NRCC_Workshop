@@ -35,4 +35,21 @@ print(x)
 #The rindex() method finds the last occurrence of the specified value.
 #The rindex() method raises an exception if the value is not found.
 
-print(txt.rindex("e", 5, 10))
+txt = 'nepali are good people'
+print(txt.rindex("l"))
+print('\n')
+
+# syntax : string.rjust(length, character)
+# returns the right justified string, space character is default
+
+txt = 'mango'
+print(txt.rjust(20, '*'))
+
+# syntax : string.rpartition(value)
+# The rpartition() method searches for the last occurrence of a specified string, and splits the string into a tuple containing three elements.
+# The first element contains the part before the specified string.
+# The second element contains the specified string.
+# The third element contains the part after the string.
+
+txt = 'nepa is in south asia, nepal is next to india, nepal is my home'
+print(txt.rpartition('nepal'))
