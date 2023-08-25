@@ -72,3 +72,19 @@ txt = "banana,,,,,ssqqqww....."
 x = txt.rstrip(".wsq,") # look at it carefully
 print(x)
 print('\n')
+
+# syntax : string.split(separator, maxsplit)
+# The split() method splits a string into a list.
+txt = "hello, my name is Peter, I am 26 years old"
+x = txt.split(", ", 1)
+print(x)
+
+# syntax : string.splitlines(keeplinebreaks)
+# keeplinebreaks : opt, bool, default false, '\n' keep in list or not
+
+txt = "Thank you for the music\nWelcome to the jungle"
+x = txt.splitlines(True)
+print(x)
+
+print(txt.splitlines(False))
+# observe the difference
