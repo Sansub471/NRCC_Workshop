@@ -88,3 +88,24 @@ print(x)
 
 print(txt.splitlines(False))
 # observe the difference
+
+# syntax : string.startswith(value, start, end)
+# value required, others optional, default value is all string
+
+txt = "Hello, welcome to my world."
+x = txt.startswith("wel", 7, 20)
+print(x)
+
+txt = "Hello, welcome to my world."
+x = txt.startswith("Hello")
+print(x)
+print('\n')
+
+# syntax : string.strip(characters)
+# characters : to be removed
+# The strip() method removes any leading, and trailing whitespaces.
+# or the character specified
+txt = ",,,,,rrttgg.....banana....rrr"
+x = txt.strip(",grt.")
+print(x)
+print('\n')
