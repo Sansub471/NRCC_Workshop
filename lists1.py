@@ -54,3 +54,22 @@ print(fruits)
 # removes the first occurence of the element with the specified value
 fruits.remove('pear')
 print(fruits)
+
+# syntax : list.reverse()
+fruits.reverse()
+print(fruits)
+print('\n')
+
+# syntax : list.sort(reverse=True|False, key=myFunc)
+# reverse : opt, True means descending and False means ascending
+# default is False
+# key : a functino to specify sorting criteria
+def myFunc(e):
+  return len(e)
+
+cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+print(cars)
+cars.sort(reverse=True, key=myFunc)
+print(cars)
+
+# Python does not have built-in support for Arrays, but Python Lists can be used instead.
