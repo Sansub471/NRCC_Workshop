@@ -26,9 +26,31 @@ print('\n')
 # any iterable, list, set, tuple, etc.
 # The extend() method adds the specified list elements (or any iterable) to the end of the current list.
 points = (1,4,7,8)
-fruits.extend(points)
+names.extend(points)
+print(names)
+
+names.extend('nepal')
+print(names)
+
+# syntax : list.index(element)
+# element: string, number, list, etc.
+# returns position at the first occurence of the specified value
+print(fruits.index('pear'))
+print('\n')
+
+# syntax : list.insert(pos, element)
+print(fruits)
+fruits.insert(1, 'pineapple')
+print(fruits)
+print('\n')
+
+# syntax : list.pop(pos)
+# removes an element at specified position
+fruits.pop(2) # index 2, pos starts from zero
 print(fruits)
 
-fruits.extend('nepal')
+# syntax  : list.remove(element)
+# string, number, list, etc.
+# removes the first occurence of the element with the specified value
+fruits.remove('pear')
 print(fruits)
-
