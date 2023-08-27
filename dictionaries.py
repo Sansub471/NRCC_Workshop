@@ -173,3 +173,5 @@ print(x)
 x = car.values()
 car["year"] = 2018
 print(x)
+
+# Wrap for dictionary methods
