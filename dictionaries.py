@@ -148,3 +148,28 @@ print(x)
 
 x = car.setdefault("brand", "Tesla")
 print(x)
+print('\n')
+
+# syntax : dictionary.update(iterable)
+# any iterable object with key value paris, will be inserted to the dictionary
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car.update({"color": "White"})
+print(car)
+
+car.update([('country', 'Nepal'), ('price', '450K')])
+print(car)
+
+# syntax : dictionary.values()
+# returns the list of all the values in the dictionary
+# the returned value is a view object
+x = car.values()
+print(x)
+
+# When a values is changed in the dictionary, the view object also gets updated:
+x = car.values()
+car["year"] = 2018
+print(x)
