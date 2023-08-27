@@ -87,3 +87,34 @@ car = {
 x = car.items()
 car["year"] = 2018
 print(x)
+print('\n')
+
+# syntax : dictionary.keys()
+# returns a view object, which contains the keys of the dictionary as a list
+
+#When an item is added in the dictionary, the view object also gets updated:
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.keys()
+print(x)
+car["color"] = "white"
+print(x)
+print('\n')
+
+# syntax : dictionary.pop(keyname, defaultvalue)
+# removes the specified item from the dictionary
+# the value of the removed item is the return value of the pop()
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(car)
+x = car.pop("model")
+print(x)
+print(car)
