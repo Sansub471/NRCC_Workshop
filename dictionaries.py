@@ -118,3 +118,33 @@ print(car)
 x = car.pop("model")
 print(x)
 print(car)
+print('\n')
+
+# syntax : dictionary.popitem()
+# removes the item that was last inserted into the dictionary
+# poped item returned as tuple, key-value pair
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(car)
+x = car.popitem()
+print(x) # 
+print(car)
+
+# syntax : dictionary.setdefault(keyname, value)
+# returns the value of the item with the specified key.
+# keyname : the keyname item to return the value from
+# value : if keyname doesn't exist, it becomes the 
+# default value otherwise None is default.
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = car.setdefault("color", "white")
+print(x)
+
+x = car.setdefault("brand", "Tesla")
+print(x)
