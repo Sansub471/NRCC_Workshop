@@ -40,3 +40,25 @@ print('\n')
 values = 'Nepal'
 thisdict = dict.fromkeys(x, values)
 print(thisdict)
+print('\n')
+
+# syntax : dictionary.get(keyname, value)
+# keyname : the keyname of the item you want to return the value from
+# value : opt, a value to return if the specified key doesn't exist
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = car.get("model")
+print(x)
+
+# if the item doesn't exist
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = car.get("price", 15000)
+print(x)
+print('\n')
