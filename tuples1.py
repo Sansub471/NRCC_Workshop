@@ -8,3 +8,8 @@ print(x)
 # syntax : tuple.index(value)
 # finds the first occurence of the specified value
 # raise exception if the value is not found.
+x = numbers.index(8)
+print(x)
+
+# x = numbers.index(20) # Exception
+# print(x)
