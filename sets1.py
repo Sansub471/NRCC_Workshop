@@ -36,3 +36,18 @@ print(fruits1)
 # removes the specified item form the set
 fruits.discard('cherry')
 print(fruits)
+
+
+# set.intersection(set1, set2, set3, ...)
+# returns a new set
+plate1 = {'rice','dal', 'vegetables', 'chicken', 'fish', 'mutton'}
+plate2 = {'rice', 'dal', 'mutton', 'vegetables'}
+plate3 = {'dal', 'vegetables', 'rice', 'fish'}
+common  = plate1.intersection(plate2, plate3)
+print(common)
+
+# set.intersetion_update(set1, set2, ...)
+# removes the item that is not present in both sets (or in all sets )
+# items removed from original set
+plate3.intersection_update(plate2, plate1)
+print(plate3)
