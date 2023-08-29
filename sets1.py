@@ -23,3 +23,16 @@ print(x)
 
 x = fruits1.difference(fruits)
 print(x)
+print('')
+
+# set.difference_update(set)
+# removes the items that exist in both sets
+# new set not returned, items removed from original set 
+fruits1.difference_update(fruits)
+print(fruits1)
+
+# set.discard(value)
+# value : the item to search for and remove
+# removes the specified item form the set
+fruits.discard('cherry')
+print(fruits)
