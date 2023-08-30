@@ -57,4 +57,14 @@ print(plate3)
 z = fruits.isdisjoint(fruits1)
 print(z)
 
+# set.issubset(set)
+# set : the set to search for equal items in 
+z = plate1.issubset(plate2)
+print(z)
+
+# set.issuperset(set)
+z = plate1.issuperset(plate2)
+# returns True if all items in the specified set exists in the original
+# set, otherwise it returns False
+print(z)
 
