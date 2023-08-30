@@ -51,3 +51,10 @@ print(common)
 # items removed from original set
 plate3.intersection_update(plate2, plate1)
 print(plate3)
+
+# set.isdisjoint(set)
+# returns True or False
+z = fruits.isdisjoint(fruits1)
+print(z)
+
+
