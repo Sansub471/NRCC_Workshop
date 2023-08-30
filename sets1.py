@@ -102,3 +102,21 @@ y = {"google", "microsoft", "apple", "yahoo", "oracle"}
 x.symmetric_difference_update(y)
 print(x)
 print('')
+
+# set.union(set1, set2, ....)
+# set2 optional, ...
+
+x = {"a", "b", "c"}
+y = {"f", "d", "a"}
+z = {"c", "d", "e"}
+result = x.union(y, z)
+print(result)
+print('')
+
+# set.update(set)
+# updates the current set, by adding items from another set(or any other iterable)
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple", "yahoo", "oracle"}
+x.update(y)
+print(x)
+print('')
