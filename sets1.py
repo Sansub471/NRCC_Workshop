@@ -83,3 +83,22 @@ print(fruits)
 print(plate3)
 plate3.remove('dal')
 print(plate3)
+print('')
+
+# set.symmetric_difference(set)
+# returns a set that contains all items from both set, but not the items
+# that are present in both sets.
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+z = x.symmetric_difference(y)
+print(z)
+print('')
+
+# set.symmetric_difference_update(set)
+# method updates the original set by removing items that are present 
+# in both sets, and inserting the other items.
+x = {"apple", "banana", "cherry", "yahoo"}
+y = {"google", "microsoft", "apple", "yahoo", "oracle"}
+x.symmetric_difference_update(y)
+print(x)
+print('')
