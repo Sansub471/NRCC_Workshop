@@ -34,6 +34,7 @@ print(fruits1)
 # set.discard(value)
 # value : the item to search for and remove
 # removes the specified item form the set
+# error not raised if not found
 fruits.discard('cherry')
 print(fruits)
 
@@ -67,4 +68,18 @@ z = plate1.issuperset(plate2)
 # returns True if all items in the specified set exists in the original
 # set, otherwise it returns False
 print(z)
+print('')
 
+# set.pop()
+# removes a random item from the set
+print(fruits)
+y = fruits.pop()
+print(y)
+print(fruits)
+
+# set.remove(item)
+# removes the specified element from the set
+# raises an error if not found
+print(plate3)
+plate3.remove('dal')
+print(plate3)
