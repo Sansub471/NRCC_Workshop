@@ -13,12 +13,14 @@ print('\n')
 
 fp = open('data.txt', 'r')
 print(fp.fileno())
+fp.close()
 
 # file.flush()
 fp = open('data.txt', 'a')
-fp.write('This is the new file.\n')
+fp.write('\nThis is the new file.\n')
 fp.flush()
-fp.write('This is the second new line from script\n')
+fp.write('This is the second new line from script.\n')
+fp.close()
 
 print('\n')
 
@@ -28,15 +30,30 @@ print('\n')
 fp = open('data.txt', 'r')
 print(fp.isatty())
 print('')
+fp.close()
 
 # file.read()
 # returns the specified number of bytes from the file. Default is -1 
 # which means the whole file
 fp = open('data.txt', 'r')
 print(fp.read())
+fp.close()
 print('')
 
 print('Reading given number of bytes: ')
 fp = open('data.txt', 'r')
 print(fp.read(50))
+fp.close()
 print('')
+
+# file.readable()
+# returns True if the file is readable, False if not.
+f = open('data.txt', 'r')
+print(f.readable())
+f.close()
+
+# file.readline()
+# returns one line from the file
+f = open("data.txt", 'r')
+print(f.readline())
+f.close()

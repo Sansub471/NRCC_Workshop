@@ -1,15 +1,15 @@
-An apple a day keeps the doctor away. Enjoy the crisp and juicy taste of an apple. Whether it's a red apple or a green apple, 
-the health benefits of apple consumption are well-known.
+An apple a day keeps the doctor away. 
+Enjoy the crisp and juicy taste of an apple. 
+Whether it's a red apple or a green apple, the health benefits of apple consumption are well-known.
 apple
 apple
 apple
 mango
 orange
-I love apple.This is the new file.
-This is the second new line from script
+I love apple.
+
 This is the new file.
-This is the second new line from script
+This is the second new line from script.
+
 This is the new file.
-This is the second new line from script
-This is the new file.
-This is the second new line from script
+This is the second new line from script.
