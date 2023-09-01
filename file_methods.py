@@ -17,9 +17,9 @@ fp.close()
 
 # file.flush()
 fp = open('data.txt', 'a')
-fp.write('\nThis is the new file.\n')
+#fp.write('\nThis is the new file.\n')
 fp.flush()
-fp.write('This is the second new line from script.\n')
+#fp.write('This is the second new line from script.\n')
 fp.close()
 
 print('\n')
@@ -57,3 +57,14 @@ f.close()
 f = open("data.txt", 'r')
 print(f.readline())
 f.close()
+print('')
+
+# file.readlines(hint)
+# hint: limit the number of lines returned.
+# returns a list containing each line in the file as a list item.
+fp = open('data.txt', 'r')
+print(fp.readlines())
+print('\n')
+print(fp.readlines(5))
+fp.close()
+

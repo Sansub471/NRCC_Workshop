@@ -8,8 +8,3 @@ mango
 orange
 I love apple.
 
-This is the new file.
-This is the second new line from script.
-
-This is the new file.
-This is the second new line from script.
