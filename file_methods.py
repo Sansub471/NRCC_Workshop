@@ -67,4 +67,17 @@ print(fp.readlines())
 print('\n')
 print(fp.readlines(5))
 fp.close()
+print('')
 
+# file.seek(offset)
+# A number representing the position to set the current file stream position.
+# sets the current file position in a file stream and returns the new position
+fp = open('data.txt','r')
+fp.seek(40) # number of byte
+# set the current file stream in a file stream
+print(fp.readline())
+fp.close()
+
+fp = open('data.txt', 'r')
+print(fp.seek(40))
+print('')
