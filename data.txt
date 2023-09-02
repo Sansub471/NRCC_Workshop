@@ -6,5 +6,4 @@ apple
 apple
 mango
 orange
-I love apple.
-
+I love apple.Hello world, this is the end of the file.

@@ -99,7 +99,6 @@ print(fp.tell())
 print('')
 fp.close()
 
-
 # file.truncate(size)
 # The size of the file(in bytes) after the truncate. Default None, which
 # means the current file stream position.
@@ -118,6 +117,20 @@ fp.close()
 fp = open('data.txt', 'r')
 print(fp.writable())
 print('')
+fp.close()
 
+# file.write(byte)
+# method writes a specified text to the file.
+# where the specified text will be inserted depends on the file mode and stream position
+# "a" : text inserted by default at the end of the file
+# "w" : file empitied before the text will be inserted at the current file strem, default 0
+fp = open('data.txt', 'a')
+fp.write('Hello world, this is the end of the file.')
+fp.close()
+
+# open and read the file after the appending 
+fp = open('data.txt', 'r')
+print(fp.read())
+fp.close()
 
 
