@@ -81,3 +81,23 @@ fp.close()
 fp = open('data.txt', 'r')
 print(fp.seek(40))
 print('')
+
+# file.seekable()
+# returns True if the file is seekable, False if not
+# A file is seekable if it allows to the file stream, like the seek() method.
+fp = open('data.txt', 'r')
+print(fp.seekable())
+fp.close()
+
+# file.tell()
+# returns the current file position in a file stream
+# you can change the current file position with the seek() method.
+fp = open('data.txt','r')
+print(fp.tell())
+fp.seek(50)
+print(fp.tell())
+print('')
+
+
+
+
