@@ -97,7 +97,27 @@ print(fp.tell())
 fp.seek(50)
 print(fp.tell())
 print('')
+fp.close()
 
+
+# file.truncate(size)
+# The size of the file(in bytes) after the truncate. Default None, which
+# means the current file stream position.
+fp = open('datacp.txt', 'a')
+fp.truncate(40)
+fp.close()
+
+# open and read the file after the truncate
+fp = open('datacp.txt', 'r')
+print(fp.read())
+fp.close()
+
+# file.writable()
+# returns True if the file is writable, False if not
+# A file is writable if it is opened using 'a' for append or 'w' for write
+fp = open('data.txt', 'r')
+print(fp.writable())
+print('')
 
 
 
