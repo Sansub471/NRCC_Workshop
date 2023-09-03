@@ -4,6 +4,16 @@ class Student:
         self.rollno = rollno
         self.age = age
         self.school = school
+    
+    # controls what should be returned when the class object is represented
+    # as a string
+    def __str__(self) -> str:
+        return f'{self.name}: {self.age}'
 
+    def myname(self):
+        return f'My name is {self.name}, {self.age} and still in college.'
+    
 std = Student('Subash', 45, 24, 'BESS')
 print(std.name)
+print(std)
+print(std.myname())
