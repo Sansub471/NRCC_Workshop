@@ -13,3 +13,5 @@ print(x)
 
 # x = numbers.index(20) # Exception
 # print(x)
+
+# tuples methods done
