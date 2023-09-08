@@ -17,3 +17,5 @@ std = Student('Subash', 45, 24, 'BESS')
 print(std.name)
 print(std)
 print(std.myname())
+
+# OOP with python is fun, but exam is here so let's stop it for the day.
