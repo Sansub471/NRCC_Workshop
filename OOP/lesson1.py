@@ -22,4 +22,6 @@ item2 = Item("Laptop", 3000, 4) # Try with minus signs
 
 print(item2.calcualte_total_price())
 
+# This is not the new standard.
+
         
