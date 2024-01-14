@@ -39,3 +39,13 @@ print(list1)
 # list.index(element) Find the index of first occurence of the element.
 print(list1.index('pear'))
 
+# list.reverse() Reverse a given list.
+# list.sort(reverse=True/False, key=sort_logic) # sort logic is function, pass it, don't execute it.
+
+def sort_logic(elem):
+    return elem[0]
+
+list1.sort(reverse=False, key=sort_logic)
+print(list1)
+
+
