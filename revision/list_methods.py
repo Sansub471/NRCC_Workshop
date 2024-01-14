@@ -23,5 +23,19 @@ def sort_func(elem):
 names.sort(reverse=False, key=sort_func)
 print(names)
 
-# This is a dummy commit.
+# Make a list of list methods: 
+# list.append() Add an element at the last
+# list.extend(iterable)
+
+print("Trying this from memory : ")
+
+list1 = ['apple','oranges','mango']
+list2 = ['banana', 'papaya', 'pear']
+list1.extend(list2)
+print(list1)
+
+
+# list.insert(index, element)
+# list.index(element) Find the index of first occurence of the element.
+print(list1.index('pear'))
 
