@@ -58,3 +58,5 @@ print(list1.count('apple'))
 # list.count(elem) Count the occurence of the elem in the list
 # list.reverse() Reverse a list
 # list.sort(reverse=True/False, key=sorting func) 
+
+# List part is done for today.
