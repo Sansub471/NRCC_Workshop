@@ -50,3 +50,11 @@ print(list1)
 
 print(list1.count('apple'))
 
+# Let's write the list methods again
+# list.append()
+# list.insert(pos, element)
+# list.extend(iterable)
+# list.index(elem) Return the first occurence of the element
+# list.count(elem) Count the occurence of the elem in the list
+# list.reverse() Reverse a list
+# list.sort(reverse=True/False, key=sorting func) 
