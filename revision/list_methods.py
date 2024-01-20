@@ -48,4 +48,5 @@ def sort_logic(elem):
 list1.sort(reverse=False, key=sort_logic)
 print(list1)
 
+print(list1.count('apple'))
 
