@@ -14,3 +14,4 @@ print(x)
 # x = numbers.index(20) # Exception
 # print(x)
 # tuple file closed.
+
