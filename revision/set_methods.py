@@ -25,3 +25,14 @@ print(diff1)
 
 diff2 = mix.difference(composite)
 print(diff2)
+
+# set.difference_update(set)
+# Removes the intersection elements from the original set, new set not returned.
+print("set.difference_update(set)")
+mix.difference_update(prime)
+print(mix) # prime removed
+
+mix.difference_update(composite)
+print(mix) # composite removed
+
+# mix is now empty
