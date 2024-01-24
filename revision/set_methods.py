@@ -36,3 +36,14 @@ mix.difference_update(composite)
 print(mix) # composite removed
 
 # mix is now empty
+
+# set.union(set1, set2, set3)
+newMix = prime.union(composite)
+print("Union of prime and coposite: ", newMix)
+
+# set.update(set or iterable)
+numbers = [23,21]
+print("Before update : ", prime)
+prime.update(numbers)
+print("Updated prime : ", prime)
+
