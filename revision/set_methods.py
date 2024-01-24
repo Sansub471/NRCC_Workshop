@@ -75,6 +75,33 @@ print(f'Is {num2} subset of {num1}? : {num2.issubset(num1)}\n')
 print(f'Is {num1} superset of {num2}? : {num1.issuperset(num2)}\n')
 
 
+# set.pop() Remove a random item
+# Popped item is returned
+print(f"Set {num1}, poped item: {num1.pop()}\n")
+print(f"Set {num1}, poped item: {num1.pop()}\n")
+
+
+# set.remove(item)
+# raise an erroe if the item is not found
+
+# set.symmetric_difference(set)
+# All items excet the intesection items between two sets.
+A = {'a', 'b', 'c', 'd'}
+B = {'c', 'd', 'e' }
+
+# returns all items to result variable except the items on intersection
+result = A.symmetric_difference(B)
+print(result)
+
+
+# set.symmetric_difference_update()
+# method updates the original set by removing items that are present 
+# in both sets, and inserting the other items.
+x = {"apple", "banana", "cherry", "yahoo"}
+y = {"google", "microsoft", "apple", "yahoo", "oracle"}
+x.symmetric_difference_update(y)
+print(x)
+
 # set.union(set1, set2, set3)
 newMix = prime.union(composite)
 print("Union of prime and coposite: ", newMix)
