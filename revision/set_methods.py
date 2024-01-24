@@ -37,6 +37,44 @@ print(mix) # composite removed
 
 # mix is now empty
 
+# set.discard(value)
+# Remove the value from the set, no error if not found in the set
+
+print("Before discarding 7 : ", prime)
+prime.discard(7)
+print("After discarding 7 : ", prime)
+print("\n")
+
+# set.intersection(set1, set2, ...) returns a new set
+tens = {10,20,30,40,50,60}
+fives = {5,15,25,35,45,90,20,30,40}
+multiples = {5,10,30,40}
+newSet = multiples.intersection(tens, fives)
+print("Intersection : ", newSet)
+print("\n")
+
+# set.isdisjoint(set) True or false
+answer = prime.isdisjoint(composite)
+print(f"Is {prime} and {composite} disjoint? : {answer}\n")
+
+# set.issubset(set)
+num1 = {1,2,3,4,5,6}
+num2 = {1,4,6}
+print(f'Is {num2} subset of {num1}? : {num2.issubset(num1)}\n')
+
+# Return True if all items in set x are present in set y:
+
+# x = {"a", "b", "c"}
+# y = {"f", "e", "d", "c", "b", "a"}
+
+# z = x.issubset(y)
+
+# print(z)
+
+# set.issuperset(set)
+print(f'Is {num1} superset of {num2}? : {num1.issuperset(num2)}\n')
+
+
 # set.union(set1, set2, set3)
 newMix = prime.union(composite)
 print("Union of prime and coposite: ", newMix)
