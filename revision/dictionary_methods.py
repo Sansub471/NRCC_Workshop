@@ -19,3 +19,23 @@ names = ['orange', 'banana', 'mango']
 namesDict = dict.fromkeys(names) # value for each key will be None
 print(namesDict)
 print("\n")
+
+# syntax : dictionary.get(keyname, value)
+# keyname : the keyname of the item you want to return the valur from
+# value : optional, a value to return if the specified key doesn't exist
+# returned None is key not found and no value is given
+
+car = {
+    'brand' : 'Ford',
+    'model' : 'Mustang',
+    'year'  : 2000
+}
+
+x = car.get('brand')
+print(x)
+
+x = car.get('price')
+print(x)
+
+x = car.get('price', 40000)
+print(x)
