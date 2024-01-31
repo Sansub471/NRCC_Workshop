@@ -39,3 +39,9 @@ print(x)
 
 x = car.get('price', 40000)
 print(x)
+
+# syntax : dictionary.items()
+# returns view object. The view object contains key-value pairs of the 
+# dictionary as tuples in a list.
+# The view object will reflect any changes done to the dictionary.
+
