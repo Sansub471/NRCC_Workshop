@@ -57,3 +57,21 @@ print(y)
 
 car['price'] = 45000 # New key added
 print(y) # view object is also updated.
+
+# dictionary.pop(keyname, defaultvalue)
+# remove the specified item from the dictionary
+# returns: the value of the removed item.
+
+z = car.pop('price')
+print(car)
+
+# dictionary.popitem()
+# removes the item that was inserted last into the dictionary
+# returns : key, value pair of the removed item.
+car['price'] = 45000
+print(f'Checking the popitem function : {car}')
+z = car.popitem()
+print(car)
+print(z)
+
+
