@@ -45,3 +45,15 @@ print(x)
 # dictionary as tuples in a list.
 # The view object will reflect any changes done to the dictionary.
 
+x = car.items()
+print(x)
+print(type(x))
+
+# dictionary.keys()
+# returns a view object, which contains the keys of the dictionary as a list
+# When an item is added in the dictionary, the view object also gets updated.
+y = car.keys()
+print(y)
+
+car['price'] = 45000 # New key added
+print(y) # view object is also updated.
