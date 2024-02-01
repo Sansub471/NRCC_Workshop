@@ -89,4 +89,24 @@ print(x)
 
 
 # dictionary.update(iterable)
+# Any iterable with key value pairs, will be inserted
+# to the dictionary
+print("Dictionary update:")
+iter1 = {'color' : 'White'}
+iter2 = [('country', 'USA'), ('type', 'EV')]
+car.update(iter1)
+print(car)
+car.update(iter2)
+print(car)
+
+# dictionary.values()
+# returns the list of all the values of the dictionary
+# the returned value is a view object
+
+print("Dictionary values")
+x = car.values() # view object
+car['availability'] = 'No'
+print(x)
+
+
 
