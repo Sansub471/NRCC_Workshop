@@ -74,4 +74,19 @@ z = car.popitem()
 print(car)
 print(z)
 
+# dictionary.setdefault(keyname, value)
+# returns the value of the item with the specified key.
+# keyname : the keyname item to return the value from
+# value : if keyname doesn't exist, it becomes the 
+# default value otherwise None is default
+print("setdefault method :")
+print(car)
+x = car.setdefault("brand", "Tesla")
+print(x)
+
+x = car.setdefault("price", 50000)
+print(x)
+
+
+# dictionary.update(iterable)
 
