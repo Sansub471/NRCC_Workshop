@@ -92,7 +92,7 @@ print('\n')
 # syntax : dictionary.keys()
 # returns a view object, which contains the keys of the dictionary as a list
 
-#When an item is added in the dictionary, the view object also gets updated:
+# When an item is added in the dictionary, the view object also gets updated:
 car = {
   "brand": "Ford",
   "model": "Mustang",
@@ -151,7 +151,7 @@ print(x)
 print('\n')
 
 # syntax : dictionary.update(iterable)
-# any iterable object with key value paris, will be inserted to the dictionary
+# any iterable object with key value pairs, will be inserted to the dictionary
 car = {
   "brand": "Ford",
   "model": "Mustang",
@@ -173,6 +173,3 @@ print(x)
 x = car.values()
 car["year"] = 2018
 print(x)
-
-# Wrap for dictionary methods
-# This is the game day, not much thing to do.
