@@ -7,5 +7,3 @@ country = 'NEPAL'
 print(country)
 print(country.casefold())
 # string.center(length, character)
-
-# My life is a joke
