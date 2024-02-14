@@ -33,3 +33,10 @@ my_string2 = 'Nepal is a small country in South Asia between two giants China an
 print("string.find(value, start, end) function : ")
 print(my_string2.find('America')) # not found means -1
 print(my_string2.find('China')) # finds the first occurence
+
+# string.find(value, start, end)
+# value : required value to search for in the string. -1 means not found
+my_string2 = 'Nepal is a small country in South Asia between two giants China and India.'
+print("string.find(value, start, end) function : ")
+print(my_string2.find('America')) # not found means -1
+print(my_string2.find('China')) # finds the first occurence
