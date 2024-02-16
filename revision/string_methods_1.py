@@ -40,3 +40,19 @@ my_string2 = 'Nepal is a small country in South Asia between two giants China an
 print("string.find(value, start, end) function : ")
 print(my_string2.find('America')) # not found means -1
 print(my_string2.find('China')) # finds the first occurence
+
+# syntax : string.format(value1, value2, ..)
+# the format() method formats the specified value(s) and insert them 
+# inside the string's placeholder. The place holder defined by {}
+price = 'For only {p:.2f} dollars!'
+print(price.format(p=50))
+
+txt1 = "My name is {fname}, I'm {age}".format(fname = "Subash", age = 24)
+txt2 = "My name is {0}, I'm {1}".format("Subash", 24)
+txt3 = "My name is {}, I'm {}".format("Subash", 24)
+
+print(txt1)
+print(txt2)
+print(txt3)
+
+# Formatting types : https://www.w3schools.com/python/ref_string_format.asp
