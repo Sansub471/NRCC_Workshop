@@ -56,3 +56,14 @@ print(txt2)
 print(txt3)
 
 # Formatting types : https://www.w3schools.com/python/ref_string_format.asp
+
+# string.index(value, start, end)
+# Difference with find is -1 returned by find when not found 
+# but is raises a ValueError
+print('\n')
+print(txt1.index('Subash', 10))
+
+# string.isalnum()
+# returns true is all characters are alpha numeric
+txt = 'STRL8908jk'
+print(txt.isalnum())
