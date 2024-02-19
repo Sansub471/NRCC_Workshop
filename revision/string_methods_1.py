@@ -97,4 +97,40 @@ print(fraction_string.isnumeric())
 
 # -1 and 1.5 are not numeric because they have - and . which are not numeric.
 
+# string.isprintable()
+# True is all characters are printable, otherwise False
+# Characters that occupy printing space on the screen are known as 
+# printable characters. 
+# For example letters and symbols, digits, punctuation, whitespace
+# Characters that do not occupy a space and are used for formatting is 
+# known as non-printable characters. For example line breaks, page breaks
+
+# string.istitle()
+# The istitle() method returns True if all words in a text start with a upper case letter, 
+# AND the rest of the word are lower case letters, otherwise False.
+txt = "Hello, And Welcome To My World!"
+x = txt.istitle()
+print(x)
+print('\n')
+
+# string.isupper()
+# True if all the characters are uppper case
+
+## IMP 
+print("string.join(iterables)")
+## string.join(iterables)
+# Converts elements of an iterable into a string.
+fruits = ['banana', 'apple']
+cars = {'T' : 'Tesla', 'A' : 'Audi'}
+foods = ('burger', 'pizza')
+country = 'NEPAL'
+my_separator = '--'
+x = my_separator.join(fruits)
+print(x)
+x = my_separator.join(cars)
+print(x)
+x = my_separator.join(foods)
+print(x)
+x = my_separator.join(country)
+print(x)
 
