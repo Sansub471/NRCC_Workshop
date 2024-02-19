@@ -67,3 +67,34 @@ print(txt1.index('Subash', 10))
 # returns true is all characters are alpha numeric
 txt = 'STRL8908jk'
 print(txt.isalnum())
+print('\n')
+
+# Other similar methods
+# string.isascii()
+# string.isdecimal()
+# string.isdigit()
+
+# string.isidentifier()
+# is alphanumeric and _ character only allowed.
+
+# string.islower() True if all lowercase
+# string.isnumeric()
+
+# Python treats mathematical characters like numbers, subscripts, 
+# superscripts, and characters having Unicode numeric value properties 
+# (like a fraction, roman numerals, currency numerators) as numeric 
+# characters.
+
+# Example : 
+print("string.isnumeric() function : ")
+# string with superscript 
+superscript_string = '²3455'
+print(superscript_string.isnumeric())
+
+# string with fraction value 
+fraction_string = '½123'
+print(fraction_string.isnumeric())
+
+# -1 and 1.5 are not numeric because they have - and . which are not numeric.
+
+
