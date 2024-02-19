@@ -134,3 +134,27 @@ print(x)
 x = my_separator.join(country)
 print(x)
 
+print('\n')
+
+# string.ljust(length, character)
+# left align the string using a specified character
+# space is the default fill character
+
+name = 'Subash'
+print(name.ljust(20, '%'))
+
+# string.lower()
+# converts a string to lower case
+
+# string.lstrip()
+# removes any leading characters (space is the default leading characters
+#  to remove)
+
+txt = ",,,,,ssaawwfgk...mango..banana"
+x = txt.lstrip(",saw.") # characters to remove given
+print(x)
+print('\n')
+
+
+# Make trans function 
+# string.maketrans(x, y, z)
