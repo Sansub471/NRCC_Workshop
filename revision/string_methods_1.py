@@ -158,11 +158,3 @@ print('\n')
 
 # Make trans function 
 # string.maketrans(x, y, z)
-txt = ",,,,,ssaawwfgk...mango..banana"
-x = txt.lstrip(",saw.") # characters to remove given
-print(x)
-print('\n')
-
-
-# Make trans function 
-# string.maketrans(x, y, z)
