@@ -167,7 +167,30 @@ print("string.maketrans(): ")
 # Create a mapping table, and use it in the translate() method to replace any 
 # "S" characters with a "P" characters
 
+# The maketrans() method returns a translation table with a 1-to-1 mapping of a 
+# Unicode ordinal to its translation/replacement.
+
 txt = "Hello Subash!"
-mytable = str.maketrans("S", "P")
+mytable = str.maketrans("S", "P") # create a mapping to replace "S" with "P"
 print(mytable)
-print(txt.translate(mytable))
+print(txt.translate(mytable)) # translate fuction applies it.
+
+# create map with a dictionary
+# The dictionary should contain a 1-to-1 mapping from a single character string to its 
+# translation OR a Unicode number (97 for 'a') to its translation.
+mapping = {'a':'NEPAL', 'b':'CHINA', 'c':'INDIA'}
+mytable = str.maketrans(mapping)
+print(mytable)
+
+countries = 'a-b-c'
+countries = countries.translate(mytable)
+print(countries)
+
+# passing x and y, both must be string of equal length
+first = 'abc'
+second = 'NCI'
+mytable = str.maketrans(first, second)
+print(mytable)
+
+ctrs = 'a-b-c'
+print(ctrs.translate(mytable))
