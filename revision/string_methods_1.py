@@ -194,3 +194,15 @@ print(mytable)
 
 ctrs = 'a-b-c'
 print(ctrs.translate(mytable))
+
+
+# passing x, y and z
+# The third parameter in the mapping table describes characters that you want to remove from the string.
+txt = "Good night Sam!"
+x = "mSa"
+y = "eJo"
+z = "odnght"
+mytable = str.maketrans(x, y, z)
+print(txt.translate(mytable))
+
+# The maketrans() method itself returns a dictionary describing each replacement, in unicode:
