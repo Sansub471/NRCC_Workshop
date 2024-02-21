@@ -155,6 +155,19 @@ x = txt.lstrip(",saw.") # characters to remove given
 print(x)
 print('\n')
 
-
+print("string.maketrans(): ")
 # Make trans function 
 # string.maketrans(x, y, z)
+# x : must be a dictionary if only this parameter is given otherwise a string.
+# y : opt, string with same length as x, each character in the first parameter
+# will be replaced with the corresponding character in this string.
+
+# z : opt, a string describing which character to remove from the orignial string.
+
+# Create a mapping table, and use it in the translate() method to replace any 
+# "S" characters with a "P" characters
+
+txt = "Hello Subash!"
+mytable = str.maketrans("S", "P")
+print(mytable)
+print(txt.translate(mytable))
