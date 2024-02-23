@@ -93,3 +93,24 @@ x = txt.strip(".r,")
 print(x)
 print('\n')
 
+# string.swapcase()
+# upper case to lower case and vice versa
+txt = 'STRLgtkSpiron8912'
+print(txt.swapcase())
+
+# string.title()
+# returns a string where first character in each world is capitalized
+txt = 'welcome to nepal'
+print(txt.title())
+
+# string.upper()
+print(txt.upper())
+
+# string.zfill(len)
+# desired lenght of the string
+# adds zero (0) at the beginning of the string, until it raches the 
+# specified length
+print(txt.zfill(30))
+
+# Note : All string methods returns new values. They do not change
+# the original string.
