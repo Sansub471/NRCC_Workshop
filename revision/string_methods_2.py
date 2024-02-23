@@ -31,5 +31,19 @@ print(x)
 x = txt.index("one", 8, -1)
 print(x)
 
+# string.rjust(length, character)
+# returns the right justified string, space is the default character
+txt = 'mango'
+print(txt.rjust(20, '#'))
+
+# string.rpartition(value)
+# searches the last occurence of specified string, 'value'
+# and split the string into a tuple having three elements.
+# first : part before the specified string
+# second : the specified string
+# thirsd : the part after the string
+
+txt = 'nepal is in south asia. nepal is next to india and china, nepal is my home'
+print(txt.rpartition('nepal'))
 
 
