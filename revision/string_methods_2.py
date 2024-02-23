@@ -70,3 +70,26 @@ txt = "hello, my name is Subash Mainali, I'm currently unemployed right now."
 x = txt.split(",", 1) # the list will have maximum of maxsplit + 1 elements
 # -1 or empty means all
 print(x)
+print('\n')
+
+# string.splitlines(keeplinebreaks)
+# keeplinebreaks : opt, bool, default is false, '\n' keep in list or not
+txt = "Thank you for the music\nWelcome to the jungle"
+x = txt.splitlines(True)
+print(x)
+
+# string.startswith(value, start, end)
+# value required, others optional, default value is all string
+
+txt = 'Hello, welcome to my world.'
+x = txt.startswith('wel', 7, 20)
+print(x)
+
+# string.strip(characters)
+# characters : to be removed.
+# removes any leadign or trailing whitespaces or the character specified.
+txt = ",,,,,rrttgg.....banana....rrr"
+x = txt.strip(".r,")
+print(x)
+print('\n')
+
