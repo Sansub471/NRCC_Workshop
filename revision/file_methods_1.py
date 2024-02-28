@@ -37,3 +37,22 @@ fp = open(source, 'r')
 print(fp.readline())
 fp.close()
 print("\n")
+
+# file.readlines(hint)
+# hint: limit the number of lines returned.
+# returns a list containing each line in the file as a list item.
+fp = open(source, 'r')
+print(fp.readlines())
+print('\n')
+print(fp.readlines(-1))
+fp.close()
+print('\n')
+
+# file.seek(offset)
+# A number representing the position to set the current file stream position.
+# sets the current file position in a file stream and returns the new position
+fp = open(source, 'r')
+fp.seek(39) # number of byte
+# set the current file stream in a file stream
+print(fp.readline())
+fp.close()
