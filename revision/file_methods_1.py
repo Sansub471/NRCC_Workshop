@@ -1,5 +1,7 @@
 # File manipulation methods in python
 source = '../data.txt'
+source1 = '../datacp.txt'
+
 fp = open(source, 'r')
 print(fp.read())
 fp.close()
@@ -75,3 +77,18 @@ print(fp.tell())
 print('\n')
 fp.close()
 
+print("file.truncate() function : ")
+# file.truncate(size)
+# The size of the file(in bytes) after the truncate. Default None, which 
+# means the current file stream position
+fp = open(source1, 'a')
+fp.truncate(40)
+fp.close()
+
+# The . truncate() file method allows the user to resize the file to a 
+# given number of bytes when the file is accessed through the append mode.
+
+# open and read the file after the truncate
+fp = open(source1, 'r')
+print(fp.read())
+fp.close()

@@ -106,6 +106,9 @@ fp = open('datacp.txt', 'a')
 fp.truncate(40)
 fp.close()
 
+# The . truncate() file method allows the user to resize the file to a given
+# number of bytes when the file is accessed through the append mode.
+
 # open and read the file after the truncate
 fp = open('datacp.txt', 'r')
 print(fp.read())
