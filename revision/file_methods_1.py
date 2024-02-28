@@ -23,3 +23,17 @@ lines = fp.read(byte_size)
 print(lines)
 print('\n')
 
+# file.readable()
+# returns True is the file is readable, False is not.
+
+fp = open(source, 'r')
+print(fp.readable())
+fp.close()
+
+print("\nfile.readline() function : ")
+# fp.readline()
+# returns one line from the file
+fp = open(source, 'r')
+print(fp.readline())
+fp.close()
+print("\n")
