@@ -56,3 +56,22 @@ fp.seek(39) # number of byte
 # set the current file stream in a file stream
 print(fp.readline())
 fp.close()
+
+# file.seekable()
+# returns True if the file is seekable, False if not
+# A file is seekable if it allows to the file stream, like seek() method.
+fp = open(source, 'r')
+print(fp.seekable())
+fp.close()
+
+# file.tell()
+# returns the current file position in a file stream.
+# you can change the current file position with the seek() method.
+print("seek() and tell() function :")
+fp = open(source, 'r')
+print(fp.tell())
+fp.seek(50)
+print(fp.tell())
+print('\n')
+fp.close()
+
