@@ -92,3 +92,30 @@ fp.close()
 fp = open(source1, 'r')
 print(fp.read())
 fp.close()
+
+print("file.write() functions : ")
+# file.writable()
+# returns True if the file is writeable else False
+# A file is writeable if it is opened using 'a' for append or 'w' for write
+fp = open(source, 'r')
+print(fp.writable())
+print('\n')
+fp.close()
+
+fp = open(source, 'w')
+print(fp.writable())
+fp.close()
+
+print("file.write() :")
+# file.write(bytes)
+# method writes a specified text to the file.
+# where the specified text will be inserted depends on the file mode and stream positoin
+# a : inserted at the end of file by default
+# w : file empetied before the text will be inserted at the current file stream, default 0
+fp = open(source, 'a')
+fp.write('Hello! Today is WAFF Final without Samba, a tough game ahead.')
+fp.close()
+
+fp = open(source, 'r')
+print(fp.read())
+fp.close()
