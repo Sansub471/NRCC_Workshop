@@ -119,3 +119,5 @@ fp.close()
 fp = open(source, 'r')
 print(fp.read())
 fp.close()
+
+# File methods completed.
